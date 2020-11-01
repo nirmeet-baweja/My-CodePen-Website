@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Product landing page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+  <head>
+    <title>
+      MetaPlate - Printed Metal Posters
+    </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <header id="header">
+
+      <div id="logo-heading-container">
+        <figure id="logo-container">
+          <img id="header-img" src="https://i.pinimg.com/originals/3c/58/ab/3c58abe338668c47ddc98fd5f0c6c37d.png" alt="company-logo">
+        </figure>
+        <p>MetaPlate</p>
+      </div>
+
+     
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how-its-made" class="nav-link">How its made</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#membership" class="nav-link">Join our newsletter and get 10% Discount</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main id="main">
+
+      <section id="intro">
+
+        <div id="metaplate">
+          <h2>What is a MetaPlate?</h2>
+          <p>
+            MetaPlate is a one-of-a-kind metal poster designed to capture your unique passions.
+            We’ve created a 21st century canvas that’s sturdy, magnet mounted, and durable
+            enough to withstand a lifetime of intense staring.
+          </p>
+          <p>
+            But staring is only half the fun! You can customize, collect, and rearrange
+            them at will – it only takes 20 seconds to set them up with no power tools,
+            no damages, no frustrations.
+          </p>
+        </div>
+  
+        <div id="slider-img-container">
+          <button class="slider-button" onclick="previous()"> &lt; </button>
+            <img id="slider-img" src="https://displate.com/displates/43317/zoom/2015-04-29/0cc61b1b3a3eb4ef02d0491bb72c28bc.jpg" alt="poster image">
+          <button class="slider-button" onclick="next()"> &gt </button>
+        </div>
+
+      </section>
+
+      <hr>
+
+      <section id="features">
+
+        <figure id="wall-img-container">
+          <img id="wall-img" src="https://displate.com/img/what-a-displate/animals.jpg" alt="wall illustration">
+          <br>
+          <figcaption id="wall-img-caption">
+            Wall Illustration
+          </figcaption>
+        </figure>
+  
+        <div id="features-list-container">
+          <h2>Features</h2>
+          <ul>
+            <li>Crazy durable</li>
+            <li>Vivid colours</li>
+            <li>Quality Checked</li>
+            <li>Bent edges</li>
+            <li>Extremely detailed</li>
+            <li>Hologram of authenticity</li>
+            <li>Safe for walls</li>
+            <li>Easy to setup, switch and combine</li>
+          </ul>
+        </div>
+
+      </section>
+ 
+      <hr>
+
+      <section id="how-its-made">
+
+        <h2>You can see how our posters are delicately hand-made</h2>
+        <iframe id="video" src="https://www.youtube.com/embed/HhZZzh4DOUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </section>
+
+      <hr>
+
+      <section id="pricing">
+
+        <h2>You can choose from three available sizes</h2>
+
+        <div id="pricing-block-container">
+
+          <div class="price-block">
+            <p>Small 17.7"/12.6"</p>
+            <p>Price: £100</p>
+            <img class="price-img" src="https://displate.com/img/product/new_product/model_m@2x.png" />
+          </div>
+
+          <div class="price-block">
+            <p>Medium 26.6"/18.9"</p>
+            <p>Price: £150</p>
+            <img class="price-img" src="https://displate.com/img/product/new_product/model_l@2x.png" />
+          </div>
+
+          <div class="price-block">
+            <p>Large 35.4"/25.2"</p>
+            <p>Price: £200</p>
+            <img class="price-img" src="https://displate.com/img/product/new_product/empty_XL@2x.png" />
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr>
+
+      <section id="membership">
+
+        <p>Join our newsletter.</p>
+
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input id="email" type="email" name="email" placeholder="example@example.com" required>
+          <br>
+          <input id="submit" type="submit" value="Submit">
+        </form>
+
+      </section>
+
+    </main>
+    
+    <footer>
+      <a id="link" href="https://displate.com/">For more information about our products click here</a>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  </body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
