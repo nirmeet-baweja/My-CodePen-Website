@@ -1,0 +1,369 @@
+html
+{
+  /* Style properties inherited by the whole document */
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-size: 10px; /* 1rem = 10px */
+}
+
+body
+{
+  /* Properties that are applied to the body of the html page */
+  margin: auto;
+  text-align: justify;
+  background-color: #efefef;
+}
+
+header
+{
+  /* The header tag contains the company name, comapny logo and the 
+  navigation bar */
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: #caebf2da;
+  align-items: center;
+  width: 100vw;
+  height: 7rem;
+  z-index: 2;
+}
+
+#nav-bar ul
+{
+  list-style-type: none;
+  display: flex;
+  align-items: stretch;
+  margin: 1.6rem;
+  padding: 0;
+  width:100%;
+/*   border: solid; */
+}
+
+#nav-bar li
+{
+  float: left;
+  display: flex;
+  font-size: 1.6rem;
+/*   border: solid; */
+}
+
+.nav-link
+{
+  display: block;
+  height: auto;
+  color: rgba(0, 0, 0, 0.801);
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none; /* This removes the underline from links */
+}
+
+#nav-bar li a:hover
+{
+  /* Change the link colour and background colour on hover */
+  background-color: #ff3b3f;
+  color: white;
+}
+
+#logo-heading-container
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+  height: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  color: #ff3b3f;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+#logo-container
+{
+  width: 8vw;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+/*   border: solid; */
+}
+
+#header-img
+{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.2rem solid #ff3b3f;
+}
+
+main
+{
+/* Properties that are applied to the main block of the page */
+}
+
+@media screen and (max-width: 1000px)
+{
+  header
+  {
+    height: 9.6rem;
+  }
+  #logo-heading-container
+  {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 650px)
+{
+  header
+  {
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 6.4rem;
+  }
+  #logo-heading-container
+  {
+    width: 100%;
+  }  
+}
+
+
+section
+{
+  font-size: 1.6rem;
+  padding: 8rem 0 8rem 0; /* Top padding ensures that the sections start below the navbar */
+}
+
+hr
+{
+  background-color: #ff0a0f;
+  height: 0.2rem;
+  width: 75%;
+  border: none;
+}
+
+#intro
+{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#metaplate
+{
+  width: 35vw;
+}
+
+#slider-img-container
+{
+  text-align: center;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider-img
+{
+  margin: 3rem 1rem 3rem 1rem;
+  width: 30vw;
+  border-radius: 1rem;
+  box-shadow: -10px 10px 20px rgba(0,0,0,0.18), -5px 6px 10px rgba(157, 45, 43, 0.5);
+}
+
+.slider-button
+{
+  border-radius: 50%;
+  font-size: 3em;
+  background-color: #a9a9a9;
+  border-color: transparent;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.19);
+}
+
+.slider-button:hover
+{
+  background-color: #ff3b3f;
+  transform: scale(1.3);
+  color: white;
+}
+
+
+#wall-img-container
+{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#wall-img
+{
+  margin: 10px 10px 30px 10px;
+  box-shadow: -10px 10px 20px rgba(0,0,0,0.19), -5px 6px 10px  rgba(157, 45, 43, 0.5);
+  width: 90%;
+}
+
+#wall-img-caption
+{
+  background-color: #caebf2da;
+  box-shadow: -10px 10px 20px rgba(0,0,0,0.19), -5px 6px 10px rgba(157, 45, 43, 0.5);
+  width: 40%;
+  text-align: center;
+  border-radius: 2rem;
+  font-size: 2rem;
+  padding: 1.5rem;;
+}
+
+#features
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#features-list-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%;
+}
+
+#features ul
+{
+  list-style-type: none;
+}
+
+#features li
+{
+  background-color: #caebf2da;
+  box-shadow: -10px 10px 20px rgba(0,0,0,0.19), -5px 6px 10px rgba(157, 45, 43, 0.5);
+  padding: 15px;
+  margin: 20px 20px 20px -10px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+h2
+{
+  box-shadow: -10px 10px 20px rgba(0,0,0,0.19), -5px 6px 10px rgba(157, 45, 43, 0.5);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #ff3b3f;
+  color: #efefef;
+}
+
+#how-its-made
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0 30px 0;
+}
+
+#video
+{
+  object-fit: initial;
+  width: 700px;
+  height: 394px;
+}
+
+#pricing-block-container
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.price-block
+{
+  flex-basis: 30%;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin: 20px 20px 20px 20px;
+  box-shadow: -5px 10px 15px 5px rgba(0,0,0,0.18);
+}
+
+#pricing p
+{
+  text-align: center;
+}
+
+.price-img
+{
+  width: 100%;
+}
+
+#membership
+{
+  text-align: center;
+  background-color: #a9a9a9;
+  bottom: 0;
+  font-size: 1.5rem;
+}
+
+#submit
+{
+  background-color: #ff3b3f;
+  color: white;
+  font-size: 1.6rem;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border-color: transparent;
+  box-shadow: -5px 5px 10px rgba(0,0,0,0.18);
+}
+
+@media screen and (max-width: 650px)
+{
+  section
+  {
+    flex-direction: column;
+    width: 100%;
+  }
+  #metaplate
+  {
+    width: 100%;
+  }
+  #slider-img-container
+  {
+    width: 100%;
+  }
+  #slider-img
+  {
+    width: 60vw;
+  }
+  #pricing-block-container
+  {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  #how-its-made
+  {
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+footer
+{
+  margin: auto auto auto auto;
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  background-color: #a9a9a9;
+}
+
+/* image links
+
+link1 - https://displate.com/displates/967617/zoom/2019-11-21/40fdf5268cc41b142077efea01c523a4_301a100f100e27241a8c1ba55ecc0e7e.jpg
+link2 - https://displate.com/displates/967630/zoom/2019-11-21/b5458b0db492a70e2b81a191485ff080_37057858e11b2ff1ddcd96c4f3168aca.jpg
+link3 - https://displate.com/displates/967720/zoom/2019-11-21/58fb80052878fc9de21019cbcf34b563_0a23437ca88fa97b74079169c7d71e91.jpg
+link4 - https://displate.com/displates/504203/zoom/2019-04-04/a77f3bcb62d736585c04781d84d2c94e_bd37be6ce2b0d71bade81a593aeb650f.jpg
+*/
